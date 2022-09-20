@@ -1,0 +1,27 @@
+ALGORITHM checkpoint
+VAR
+    phrase: string
+    nbmots,nbvoy, longeur, i: integer
+BEGIN
+nbmots=0
+nbvoy=0
+
+    Read(phrase);
+    for(i=1; i<phrase.length, i++){
+       if(phrase[i]==" "){
+           nbmots=nbmots+1
+           }
+       }
+longeur=phrase.length()
+ for(i=1; i<phrase.length, i++){
+       if(phrase[i] in ["a","i","u","y","o"]){
+           nbvoy=nbvoy+1
+           }
+       }
+     
+write("le nombre de mots", nbmots)
+write ("le nombre de voyelles", nbvoy)
+write("longeur de phrase est", longeur)
+END
+
+
